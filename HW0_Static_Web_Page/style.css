@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300&family=Noto+Sans+Thai:wght@300&display=swap');
+body{
+  font-family: 'IBM Plex Sans Thai', sans-serif;
+  font-family: 'Noto Sans Thai', sans-serif;
+ }
+div {
+  resize: none;
+  overflow: auto;
+}
+.bg-color{
+  background-color: #FED8B1;
+ }
+.box-title {
+  margin-top: 20px;
+  background-color: #F4A460;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1750px;
+}
+.box{
+  background-color: antiquewhite;
+  padding: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: thick ridge #FFE4C4;
+  width: 1500px;
+  border-radius: 10px;
+}
+
+.center {
+  text-align: center;
+}
+.text-title{
+  font-size: 55px;
+  font-weight: 65%;
+}
+.font-b{
+  font-weight: 100% ;
+}
+.image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 10px;
+}
+.font-text{
+  font-size: 15px;
+  /* font-weight: bold; */
+}
+.info{
+  padding: 20px;
+  text-align: left;
+  margin-left: 25px;
+  font-size: 20px;
+}
+.info2{
+  padding: 20px;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 28px;
+  outline: thick ridge #E78A61;
+  background-color: #F8B88B;
+  border-radius: 20px;
+}
+mark { 
+  background-color: whitesmoke;
+  color: black;
+}
+mark2 { 
+  background-color: red;
+  color: black;
+}
+.box2{
+  margin-top: 20px;
+  background-color: antiquewhite;
+  outline: thick ridge #FFE4C4;
+  padding: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1500px;
+  border-radius: 10px;
+}
+.box-in{
+  margin-top: 20px;
+  background-color:#C9C0BB;
+  padding: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1500px;
+  border-radius: 10px;
+}
+.row{
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+.head-footer{
+  
+  text-align: left;
+  margin-left: 25px;
+  font-size: 25px;
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: 1rf 1rf;
+}
+.container-head{
+  display: flex;
+}
+.container{
+  margin: 20px auto 20px auto;
+  width: 500px;
+  /* background-color: red; */
+  /* text-align: center; */
+}
+.head-f{
+  text-align: center;
+  /* text-align: center; */
+}
+.descripton{
+  margin-left: 50px;
+}
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
