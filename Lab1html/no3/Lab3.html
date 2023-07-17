@@ -11,37 +11,47 @@
         text-align: center;
     }
     .order{
-        text-align: center;
+        display: flex;
+        /* flex-flow: column; */
+        justify-content: center;
+        /* align-items: center; */
+        /* text-align: center; */
         /* text-align: justify; */
         /* float: left; */
-        list-style-position: inside;
+        /* list-style-position: inside; */
         
     }
    
 </style>
 <body>
+    
     <h1 class="center">The Julian-Claudian Dynasty 27 BC - AD 68:</h1>
-    <ol class="order" type="I">
+    <div class="order">
+    <ol type="I">
     <li>Augustus Caesar (Emperor) - 27 BC to 14 AD</li>
     <li>Tiberius (Emperor) - 14 AD to 37 AD</li>
     <li>Caligula (Emperor) - 37 AD to 41 AD</li>
     <li>Claudius (Emperor) - 41 AD to 54 AD</li>
     <li>Nero (Emperor) - 54 BC AD 68 AD</li>
     </ol>
+    </div>
     <hr>
-    
-    <ol class="order" type="A">
-        <h1 class="center">Categories of Fire :</h1>
+
+    <h1 class="center">Categories of Fire :</h1>
+    <div class="order">
+    <ol type="A"> 
         <li>Fires involving solid materials (e.g. wood, paper, texttiles)</li>
         <li>Fires involving flammable liquids (e.g. petrol, diesel, oil)</li>
         <li>Fires involving flammable gases (e.g. butane, propane)</li>
         <li>Electrical fire*</li>
         <li>Cooking oil fires</li>
     </ol>
+    </div>
     <hr>
-    
-    <ol class="order" type="A" start="24">
-        <h1 class="center">This list's index has a start value of 24</h1>
+
+    <h1 class="center">This list's index has a start value of 24</h1>
+    <div class="order">
+    <ol type="A" start="24">
         <li>List item one</li>
         <li>List item two</li>
         <li>List item three</li>
@@ -49,10 +59,12 @@
         <li>List item five</li>
         <li>List item six</li>
     </ol>
+    </div>
     <hr>
-    
-    <ol class="order" type="1" start="10" reversed>
-        <h1 class="center">10 Highest Populations</h1>
+
+    <h1 class="center">10 Highest Populations</h1>
+    <div class="order">
+    <ol type="1" start="10" reversed>
         <li>Japan (126,168,156)</li>
         <li>Russia (142,122,776)</li>
         <li>Bangladesh (159,453,001)</li>
@@ -62,10 +74,10 @@
         <li>Indonesia (262,787,403)</li>
         <li>United States (329,256,465)</li>
         <li>India (1,296,834,042)</li>
-        <li>China (1,384,688,986)</li>
-        <p class="center" style="font-size: 80%;">Source: U.S. Census Bureau Current Population, 30-09-2018</p>
+        <li>China (1,384,688,986)</li> 
     </ol>
-    
+    </div>
+    <p class="center" style="font-size: 80%;">Source: U.S. Census Bureau Current Population, 30-09-2018</p>
 
 </body>
 </html>
