@@ -16,7 +16,7 @@
     }
     input[type=image]{
         margin-top: 15px;
-        width: 5%;
+        width: 50px;
     }
 
 </style>
@@ -29,12 +29,12 @@
             <tbody>
                 <tr>
                     <td>Username:</td>
-                    <td><input type="text" name="Username" pattern="[0-9a-zA-z]{1,}" title="Please fill username between 0-9, a-z, A-Z" required></td>
+                    <td><input type="text" name="Username" minlength="1" title="Please fill username between 0-9, a-z, A-Z" autofocus required></td>
                 </tr>
 
                 <tr>
                     <td>Password:</td>
-                    <td><input type="password" name="Passwd" pattern="[\wก-๏_\s]{1,}" title="Please fill password between 0-9, a-z, A-Z, ก-ฮ" required></td>
+                    <td><input type="password" name="Passwd" minlength="1" title="Please fill password between 0-9, a-z, A-Z, ก-ฮ" required></td>
                 </tr>
                 <tr>
                     <td colspan="2">
