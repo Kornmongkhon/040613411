@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop2</title>
+    <style type="text/css">
+        input:invalid{
+            border:red solid 4px;
+        }
+        input,
+        input:valid{
+            color:green;
+        }
+    </style>
+</head>
+<body>
+    <form action="form-echo.php" method="POST">
+        <h1>Form pattern attibutes testing</h1>
+        <hr>
+        <p>Slide 33 Example: <input type="text" name="username" placeholder="Username" pattern="[a-z]{1,15}" title="Username should only contain lowercase letters. e.g. john"></p>
+        <h2>1. เป็นสระในภาษาอังกฤษเท่านั้นและมีได้ 3 ตัว</h2>
+        <input type="text" name="a" pattern="(a|e|i|o|u|A|E|I|O|U){3}" title="Must be (a e i o u A E I O U and limit is 3)" placeholder="3 english only">
+        <h2>2. ขึ้นต้นด้วยตัวพิมพ์ใหญ่ ที่เหลือเป็นตัวอักษรพิมพ์เล็กตั้งแต่ 1 ตัวขึ้นไป</h2>
+        <input type="text" name="b" pattern="^[A-Z][a-z]{1,}" title="Start must me A-Z next is a-z start is 1 to ..." placeholder="Xx...">
+        <h2>3. ขึ้นต้นด้วย ord หรือ order ลงท้ายด้วยตัวเลข 5 ตัว</h2>
+        <input type="text" name="c" pattern="^(ord|order)[0-9]{5}" title ="start at ord or order and fill 5 numbers" placeholder="ord/ordernnnnn">
+        <h2>4. เป็นคำว่า frog หรือ blog หรือ clog เท่านั้น</h2>
+        <input type="text" name="d" pattern="(frog|blog|clog)" title="must be frog blog clog only" placeholder="frog/blog/clog">
+        <h2>BONUS. เป็นรหัสนักศึกษา cs เท่านั้น</h2>
+        <input type="text" name="e" pattern="^\d{2}-040626-\d{4}-\d{1}" title="start at xx-040626-xxxx-x number max is 13" placeholder="xx-040626-xxxx-x">
+        <p><input type="submit" value="Submit"></p>
+    </form>
+</body>
+</html>
