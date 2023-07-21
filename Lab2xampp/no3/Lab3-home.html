@@ -9,37 +9,44 @@
     table,th,td{
         border: 1px;
         border-style: solid;
-        border-collapse: collapse;
     }
     input{
         border: 1px solid black;
         
     }
+    input[type=image]{
+        margin-top: 15px;
+        width: 5%;
+    }
 
 </style>
 <body>
-    <form>
+    <form action="Lab3-login.html">
         <div>
             <h1>เข้าสู่ระบบ</h1>
         </div>
-        <table cellpadding="5" >
+        <table>
             <tbody>
                 <tr>
-                    <th ><input type="text" name="test" pattern="[0-9a-zA-z\/]{1,}" readonly value="Username :"></th>
+                    <td>Username:</td>
                     <td><input type="text" name="Username" pattern="[0-9a-zA-z]{1,}" title="Please fill username between 0-9, a-z, A-Z" required></td>
                 </tr>
 
                 <tr>
-                    <th><input type="text" name="test" readonly value="Password :"></th>
+                    <td>Password:</td>
                     <td><input type="password" name="Passwd" pattern="[\wก-๏_\s]{1,}" title="Please fill password between 0-9, a-z, A-Z, ก-ฮ" required></td>
                 </tr>
                 <tr>
-                    <td colspan="2"><label>กรุณาพิมพ์ตามตัวเลขที่ปรากฎ : 1559</label> <div><input type="text" name="Passwd" pattern="1559" title="Wrong number"></div></td>
+                    <td colspan="2">
+                        <label>กรุณาพิมพ์ตามตัวเลขที่ปรากฎ : <div>1559</div></label> 
+                        <div><input type="text" name="Passwd" pattern="1559" title="Wrong number" required></div>
+                    </td>
                 </tr>
             </tbody>
         </table>
-        <input type="submit" value="Submit">
-        <img src="../../HW0_Static_Web_Page/images/ASCLEPIADACEAE.jpg" onclick="document.location='Lab3-login.html'" style="width: 5%;">
+        <div>
+            <input type="image" src="images/login.jpg" alt="Submit Form">
+        </div>
     </form>
 </body>
 </html>
