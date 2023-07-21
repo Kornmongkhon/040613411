@@ -81,13 +81,13 @@
                     <legend>ข้อมูลเข้าสู่ระบบ</legend> 
                         <label>Username:</label><br>
                         <div>
-                            <input type="text" name="Username" pattern="[0-9a-zA-Z_]{8,}" title="Please fill between 0-9,a-z,A-Z,_ and text more than 8">
+                            <input type="text" name="Username" pattern="[\d\w]{8,}" title="Please fill between 0-9,a-z,A-Z,_ and text more than 8">
                         </div>
                         <label><i>ประกอบด้วยตัวเลข ตัวอักษร หรือ _ ตั้งแต่ 8 ตัวขึ้นไป</i></label>
                         <div style="padding-top: 20px;">
                             <label>Password :</label>
                             <div>
-                                <input type="password" name="Passwd" pattern="[0-9a-zA-Zก-๏_\s]{8,}" title="Please fill between ก-ฮ,0-9,a-z,A-Z,_ and text more than 8">
+                                <input type="password" name="Passwd" minlength="8" title="Please fill between ก-ฮ,0-9,a-z,A-Z,_ and text more than 8">
                             </div>
                             <label><i>ประกอบด้วยอักขระอะไรก็ได้ 8 ตัวขึ้นไป</i></label>
                         </div>
