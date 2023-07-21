@@ -19,6 +19,22 @@
 <body>
     <form action="form-echo.php">
         <div class="text">
+            <label>USERNAME :</label>
+            <input type="text" name="username" placeholder="Username">
+        </div>
+        <div class="text">
+            <label>สาขาวิชา :</label>
+                <select name="dept">
+                    <option value="">-- Please choose an option --</option>
+                    <option value="CS">CS</option>
+                    <option value="IC">IC</option>
+                    <option value="MA">MA</option>
+                    <option value="IMI">IMI</option>
+                    <option value="AS">AS</option>
+                    <option value="AFET">AFET</option>
+                </select>
+            </div> 
+        <div class="text">
             <label>NAME : </label>
             <input type="text" name="NameEng" pattern="[A-Z]{1,}" title="Name is English language only and should only contain uppercase letters A-Z." placeholder="Name" required> * Eng language.
         </div>
