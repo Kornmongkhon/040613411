@@ -1,0 +1,88 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Pseudo-Class Demo</title>
+    <style>
+      a:link { color: green; }
+      a:visited { color: blue; }
+      a:hover { color: red; }
+      a:active { color: orange; }
+      input:checked { outline: 2px dotted orange; }
+      input:disabled { border-color: red; }
+      input:enabled { border-color: green; }
+      div:empty { border: solid 1px dodgerblue; }
+      div p:first-child { color: red; }
+      p span:first-of-type { color: blue; }
+      input:focus { background: yellow; }
+      p:lang(fr) { color: hotpink; }
+      div p:last-child { color: gold; }
+      p span:last-of-type { color: lightcoral; }
+      section p:not(:first-child) { color: grey; }
+      div p:nth-child(2) { color: fuchsia; }
+      div p:nth-last-child(2) { color: olive; }
+      section p:nth-last-of-type(2) { text-decoration: underline; }
+      section p:nth-of-type(3) { font-weight: bold; }
+      div *:only-child { font-size: 200%; }
+      section em:only-of-type { font-size: 200%; }
+      :root { background: beige; }
+      h1:target { color: red; }
+      div, section { border: grey dotted 1px; }
+      table { margin: auto; }
+      td.label { text-align: right; }
+      h1 { text-align: center; }
+    </style>
+  </head>
+
+  <body>
+
+    <h1 id="top">Top of Page</h1>
+
+    <p>An empty div element:</p>
+    <div></div>
+
+    <form method="post" action="">
+      <table>
+        <tr><td class="label">Name: </td><td><input type="text"></td></tr>
+        <tr><td class="label">Email: </td><td><input type="email"></td></tr>
+        <tr><td class="label">Address: </td><td><input type="address" disabled></td></tr>
+        <tr>
+          <td colspan="2">
+            <p>Gender:</p>
+            <input type=radio name=gender value="M"> Male
+            <input type=radio name=gender value="F"> Female
+            <input type=radio name=gender value="RNS"> Rather not say
+          </td>
+        </tr>
+      </table>
+    </form>
+
+    <div>
+      <p>Paragraph 1</p>
+      <p>Paragraph 2</p>
+      <p>Paragraph 3</p>
+      <p>Paragraph 4 - <span>first span</span> | <span>second span</span> | <span>third span</span></p>
+      <p>Paragraph 5</p>
+      <p>Paragraph 6</p>
+    </div>
+
+    <p lang="fr">Bonjour!</p>
+
+    <section>
+      <p>Paragraph 1</p>
+      <p>Paragraph 2</p>
+      <p>Paragraph 3</p>
+      <em>One of a kind!</em>
+      <p>Paragraph 4</p>
+      <p>Paragraph 5</p>
+      <p>Paragraph 6</p>
+    </section>
+
+    <div><span>I'm an only child!</span></div>
+
+    <a href="">https://</a><br>
+    <a href="#top">Go to the top of the page</a>
+
+  </body>
+</html>

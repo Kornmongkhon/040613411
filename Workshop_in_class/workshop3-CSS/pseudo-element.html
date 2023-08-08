@@ -1,0 +1,45 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Pseudo-elements Demo</title>
+    <style>
+      div p::after { content: "?" }
+      div p::before { content: "*" }
+      section p::first-letter { font-size: 300%; }
+      p.latin {
+        font-style: italic;
+        font-size: 125%;
+        font-family: serif;
+        margin: 1em 3em;
+      }
+      p.latin::first-line { color: red; }
+      ::selection { background: yellow; }
+      div, section { border: grey dotted 1px; }
+      h1 { text-align: center; }
+    </style>
+  </head>
+
+  <body>
+
+    <h1>Pseudo-elements Demo</h1>
+
+    <div>
+      <p>Paragraph 1</p>
+      <p>Paragraph 2</p>
+      <p>Paragraph 3</p>
+    </div>
+    <br>
+    <section>
+      <p>Paragraph 1</p>
+      <p>Paragraph 2</p>
+      <p>Paragraph 3</p>
+    </section>
+
+    <p class="latin">
+      <span class="drop_cap">L</span><span>orem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit libero sit amet nunc ultricies, eu feugiat diam placerat. Phasellus tincidunt nisi et lectus pulvinar, quis tincidunt lacus viverra. Phasellus in aliquet massa. Integer iaculis massa id dolor venenatis scelerisque. Morbi non eros a ex interdum molestie in eget leo. Proin pulvinar facilisis eros, sed porta ante imperdiet ut. Suspendisse tincidunt facilisis metus non faucibus. Integer posuere vehicula congue. Sed pharetra felis sapien, at imperdiet diam lacinia quis. Sed pharetra turpis et dui aliquam, in rhoncus elit ornare. Quisque posuere consequat nunc in rutrum. Praesent leo nibh, porta et arcu quis, placerat tincidunt turpis.</span>
+    </p>
+
+  </body>
+</html>
