@@ -1,0 +1,71 @@
+body {
+  font-family: Verdana, serif;
+}
+
+.container {
+  display: flex;
+}
+
+header,
+footer {
+  background-color: rgb(98, 98, 98);
+  color: white;
+  font-weight: bold;
+  flex-basis: 100%;
+}
+
+footer {
+  font-size: .8em;
+  order: 4;
+}
+
+header {
+  order: 1;
+}
+
+aside {
+  background-color: rgb(240, 240, 240);
+}
+
+section,
+header,
+footer,
+aside {
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+section {
+  background-color: rgb(180, 180, 180);
+}
+
+@media screen and (min-width: 601px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  aside {
+    flex-basis: 33%;
+    order: 2;
+  }
+  section {
+    flex-basis: 67%;
+    order: 3;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+  section,
+  aside {
+    flex-basis: 100%;
+  }
+  section {
+    order: 2;
+  }
+  aside {
+    order: 3;
+  }
+}
