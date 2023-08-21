@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noname1</title>
+    <script>
+        function Cal(){
+            var valuenum1 = document.getElementById('num1').value;
+            var valuenum2 = document.getElementById('num2').value;
+            var valuesum = parseInt(valuenum1)+parseInt(valuenum2);
+            // var result = document.getElementById('result');
+            document.getElementById('result').value=valuesum;
+            // alert(valuesum);
+        }
+        window.onload = function(){
+            var button1 = document.getElementById('button1')
+            button1.onclick = Cal;
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="num1">
+    + 
+    <input type="text" id="num2">
+    =
+    <input type="text" id="result">
+    <input type="button" value="Go Go" id="button1" onclick="Cal()">
+</body>
+</html>

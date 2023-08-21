@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function checkPassword(){
+            let pass1 = document.getElementById('pass1').value
+            let pass2 = document.getElementById('pass2').value
+            let msg = document.getElementById('errormsg')
+            console.log(pass1)
+            console.log(pass2)
+            if(pass1 == pass2){
+                msg.style.color = 'green'
+                msg.innerHTML = 'Correct'
+            }else{
+                msg.innerHTML ='Incorrect'
+                msg.style.color = 'red'
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Register</h1>
+    Username : <input type="text"><br>
+    Password : <input type="text" id="pass1"><br>
+    Re-type Password : <input type="text" id="pass2"><br>
+    <input type="submit" onclick="checkPassword()">
+    <div id="errormsg"></div>
+</body>
+</html>

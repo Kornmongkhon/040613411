@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function addTable(){
+           var tb = document.getElementById('tb')
+           var row= document.createElement("tr");
+           var td1 = document.createElement('td')
+           var td2 = document.createElement('td')
+           var td3 = document.createElement('td')
+           td1.innerHTML = document.getElementById('name').value;
+           td2.innerHTML = document.getElementById('address').value;
+           td3.innerHTML = document.getElementById('phone').value;
+
+           tb.appendChild(row);
+           row.appendChild(td1);
+           row.appendChild(td2);
+           row.appendChild(td3);
+           
+        }
+        window.onload = function(){
+            var button1 = document.getElementById('button1');
+            button1.onclick = addTable;
+        }
+    </script>
+</head>
+<body>
+    ชื่อลูกค้า : <input type="text" id="name"><br>
+    ที่อยู่ : <input type="text" id="address"><br>
+    โทรศัพท์ : <input type="text" id="phone"><br>
+    <input type="button" value="เพิ่ม" onclick="add()" id="button1"><br><br>
+    <table border="1" id="tb">
+        <th>ชื่อลูกค้า</th>
+        <th>ที่อยู่</th>
+        <th>โทรศัพท์</th>
+    </table>
+</body>
+</html>

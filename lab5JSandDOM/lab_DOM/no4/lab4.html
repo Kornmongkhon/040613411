@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab4</title>
+    <script>
+        function countTheWord(worldcount){
+            var result = worldcount.match(/the/gi).length
+            console.log(result)
+            // var resultarr = result
+            // console.log(resultarr)
+            // var count = resultarr.length
+            alert("มี the ทั้งหมด "+result+" คำ")
+            // alert(result)
+        }
+    </script>
+</head>
+<body>
+    The eighth ruler of the Fifth Dynasty in the late 25 th century.<br><br>
+    <a href="#" onclick="countTheWord('The eighth ruler of the Fifth Dynasty in the late 25 th century.')">Click for count 'the'</a>
+</body>
+</html>
