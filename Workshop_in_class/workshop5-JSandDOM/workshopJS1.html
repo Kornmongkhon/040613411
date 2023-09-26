@@ -11,8 +11,9 @@
         let d = new Date()
         let currentDay= String(d.getDate()).padStart(2, '0');
         let currentMonth= String(d.getMonth()+1);
+        let currentHours= String(d.getHours()).padStart(2, '0');
         console.log("วันนี้ "+currentDay+"/"+currentMonth+"/"+(d.getFullYear()+543))
-        console.log("เวลา "+d.getHours()+"."+d.getMinutes()+" น.")
+        console.log("เวลา "+currentHours+"."+d.getMinutes()+" น.")
     </script>
 </body>
 </html>
