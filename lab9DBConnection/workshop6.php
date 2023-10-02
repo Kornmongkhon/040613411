@@ -11,7 +11,7 @@
         function confirmDelete(username){
             var ans = confirm("ต้องการลบผู้ใช้ "+username+" หรือไม่ ?");
             if(ans==true){
-                document.location = "delete.php?pid="+username;
+                document.location = "deletedform.php?username="+username;
             }
         }
     </script>
@@ -28,7 +28,7 @@
         <div>อีเมล์ : <?=$row['email']?></div>
         <img src="member_photo/<?=$row['username']?>.jpg" width='150'><br>
         <!-- <a href="editform.php?username=<?=$row["username"]?>">แก้ไข</a> -->
-        <a href="deletedform.php?username=<?=$row["username"]?>" onclick="confirmDelete('<?=$row['username']?>')">ลบข้อมูล</a>
+        <a href="#" onclick="confirmDelete('<?=$row['username']?>')">ลบข้อมูล</a>
         <hr>
     <?php endwhile;?>
 </body>
